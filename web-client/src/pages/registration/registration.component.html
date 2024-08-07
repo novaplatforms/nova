@@ -1,0 +1,57 @@
+<!--
+This HTML code is private and should not be used or distributed without explicit permission from the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xapp/signup</title>
+    <link rel="icon" href="/img/xhab_white_logo.png.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="signup-container">
+    <h1 class="signup-title">sign up for xapp</h1>
+    <form class="signup-form" action="/register" method="post">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="userName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="userEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="cookies" name="acceptCookies" required>
+            <label for="cookies">I accept all cookies</label>
+        </div>
+        <button type="submit" class="signup-button">Sign Up</button>
+        <div th:if="${errorMessage != null}" class="error-message">
+            <p th:text="${errorMessage}" style="color: #800020"></p>
+        </div>
+    </form>
+    <div class="login-link">
+        <p>Already have an account? <a href="login">Login</a></p>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 xapp. All rights reserved.</p>
+        <div class="footer-menu">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="contact">Contact</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

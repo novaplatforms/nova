@@ -1,0 +1,179 @@
+/*
+This CSS code is private and should not be used or distributed without explicit permission from the author.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/Services.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Anonymous Pro", monospace;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.-header-logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.-header-menu {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.-header-menu a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.-header-menu a:hover {
+    text-decoration: underline;
+    color: #8379e7;
+}
+
+.-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.-dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.-dropdown:hover .-dropdown-content {
+    display: block;
+}
+
+.-faq {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.-faq-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+    width: 450px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8379e7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6c63b5;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.-footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.-footer-menu {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.-footer-menu a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.-footer-menu a:hover {
+    text-decoration: underline;
+    color: #8379e7;
+}

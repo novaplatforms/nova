@@ -1,0 +1,94 @@
+<!--
+This HTML code is private and should not be used or distributed without explicit permission from the author.
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xhab is a cloud-based social connectivity and storage platform designed for secure interactions and file sharing.">
+    <title th:text="${user.userName}">xapp</title>
+    <link rel="icon" href="public/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="profile.component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="-header">
+    <div class="-header-logo">xapp</div>
+    <nav class="-header-menu">
+        <form action="/search" method="get" class="search-form">
+            <input type="search" placeholder="Search.." class="search-bar">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="-nav-buttons">
+            <a href="#" class="-home-butt"></a>
+            <a href="#" class="-email-butt"></a>
+            <a href="#" class="-msg-butt"></a>
+            <a href="#" class="-sett-butt"></a>
+        </div>
+    </nav>
+</header>
+<div class="-main-content">
+    <div class="-profile">
+        <div class="-user-content">
+            <div class="-user-bar">
+                <div class="-user-logo">
+                    <img th:src="@{${user.getIcon()}}" alt="User Logo">
+                </div>
+                <div class="-user-info">
+                    <div class="-user-name">#<span th:text="${user.userName}"></span></div>
+                    <div class="-user-email"><span th:text="${user.userEmail}"></span></div>
+                    <div class="-set-buttons">
+                        <button class="btn-change-profile">Change Profile</button>
+                        <a href="#" class="btn-settings"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="-user-stats">
+                <div><b>Posts:</b> <span th:text="${user.getPosts().size()}"></span></div>
+                <div><b>Followers:</b> <span th:text="${user.getFollowers()}"></span></div>
+                <div><b>Following:</b> <span th:text="${user.getFollowing()}"></span></div>
+            </div>
+            <div class="-user-details">
+                <div class="-user-bio"><b>Bio:</b> <span th:text="${user.bio}"></span></div>
+            </div>
+            <div class="-additional-info">
+                <div><b>Location:</b> <span th:text="${user.getLocation()}"></span></div>
+            </div>
+            <div class="profile-social">
+                <div class="social-label">Social:</div>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="-additional-content">
+        <div class="toolbar">
+            <div class="-content-header-name">
+                <a href="#" class="toolbar-button-posts"></a>
+                <a href="#" class="toolbar-button-group"></a>
+            </div>
+            <div class="-tools">
+                <a href="#" class="toolbar-button-write"></a>
+                <a href="#" class="toolbar-button-cloud"></a>
+                <a href="#" class="toolbar-button-plus"></a>
+            </div>
+        </div>
+        <p>This is the additional content area.</p>
+    </div>
+</div>
+<footer>
+    <div class="-footer-content">
+        <div class="-footer-menu">
+            <a href="about">About</a>
+            <a href="privacy">Privacy</a>
+            <a href="terms">Terms</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
