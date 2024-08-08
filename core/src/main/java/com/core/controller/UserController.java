@@ -35,7 +35,6 @@ public class UserController {
 
     @Autowired
     private IUserService userService;
-
     private final Logger logger = Logger.getLogger(UserController.class.getName());
 
     @GetMapping("/all")
