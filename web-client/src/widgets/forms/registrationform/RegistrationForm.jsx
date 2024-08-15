@@ -46,7 +46,7 @@ function RegistrationForm() {
         </div>
 
         <div className="form-group">
-        <label htmlFor="name">- Name</label>
+        <label htmlFor="name">- Fullname</label>
         <input
             type="text"
             id="name"

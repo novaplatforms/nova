@@ -5,6 +5,7 @@ import './App.css';
 import LoginPage from './pages/auth/login/LoginPage';
 import RegistrationPage from './pages/auth/registration/RegistrationPage';
 import { Helmet } from 'react-helmet';
+import ProfilePage from './pages/profile/ProfilePage';
 
 function App() {
   useEffect(() => {
@@ -29,9 +30,9 @@ function App() {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegistrationPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>
   );
 }
-
 export default App;

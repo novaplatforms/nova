@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <div className="footer-content">
-            <p>&copy; 2024 Nova. All rights reserved.</p>
+            <p>&copy; 2024 Nova Corp. All rights reserved.</p>
             <div className="footer-menu">
                 <a href="/about" target="_blank" rel="noopener noreferrer">About Us</a>
                 <a href="/contact" target="_blank" rel="noopener noreferrer">Contact</a>
