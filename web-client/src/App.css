@@ -1,6 +1,11 @@
 body {
-  background-image:  url(./shared/assets/images/Background.png);
+  background-image: url(./shared/assets/images/Background.png);
   background-repeat: no-repeat;
   background-size: cover;
-
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

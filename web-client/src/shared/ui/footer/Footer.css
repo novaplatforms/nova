@@ -1,0 +1,32 @@
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color of the footer */
+    color: #ffffff; /* Text color for the footer */
+  }
+  
+  .footer-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the footer content */
+  }
+  
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-menu a:hover {
+    text-decoration: underline;
+  }
