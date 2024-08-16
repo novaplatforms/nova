@@ -13,9 +13,9 @@ function RegistrationPage() {
       <main>
         <RegistrationForm />
       </main>
-      <footer>
+      <div className="footer">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }

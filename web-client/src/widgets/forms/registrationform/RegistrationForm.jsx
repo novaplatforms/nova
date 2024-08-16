@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import './RegistrationForm.css'
+import logo from '../../../shared/assets/images/novalogo.png'
 
 function RegistrationForm() {
     const [formData, setFormData] = useState({
@@ -31,6 +32,7 @@ function RegistrationForm() {
 
     return (
         <form className="registration-form" onSubmit={handleSubmit} action='post'>
+        <center><img src={logo} alt="logo" width={50} height={50}/></center>
         <center><h2>Registration • <strong>Nova</strong></h2></center>
 
         <div className="form-group">

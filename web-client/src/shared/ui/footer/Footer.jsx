@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <footer>
+        <div className="footer">
             <div className="footer-content">
             <p>&copy; 2024 Nova Corp. All rights reserved.</p>
             <div className="footer-menu">
@@ -13,7 +13,7 @@ function Footer() {
                 <a href="/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
             </div>
             </div>
-        </footer>
+        </div>
     );
 }
 
