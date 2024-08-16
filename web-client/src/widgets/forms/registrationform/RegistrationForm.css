@@ -24,11 +24,10 @@
     width: 100%;
     max-width: 400px;
     color: var(--text-color);
-    margin-bottom: 100px;
   }
 
   .registration-form h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: var(--text-color);
   }
 

@@ -13,9 +13,9 @@ function LoginPage() {
       <main>
         <LoginForm />
       </main>
-      <footer>
+      <div className="footer">
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }

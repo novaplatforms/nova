@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
+import logo from '../../../shared/assets/images/novalogo.png'
 
 function LoginForm() {
     const [formData, setFormData] = useState({
@@ -23,6 +24,7 @@ function LoginForm() {
 
     return (
         <form className="registration-form" onSubmit={handleSubmit}>
+            <center><img src={logo} alt="logo" width={50} height={50}/></center>
             <center><h2>Log in • <strong>Nova</strong></h2></center>
             <div className="form-group">
                 <label htmlFor="username">- Username or Email</label>
