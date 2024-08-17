@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
 import logo from '../../../shared/assets/images/sparkle.png'
+import AuthButton from '../../../shared/ui/buttons/authbutton/AuthButton';
 
 function LoginForm() {
     const [formData, setFormData] = useState({
@@ -48,7 +49,7 @@ function LoginForm() {
                 />
             </div>
             <br />
-            <button type="submit" className="btn-submit">Login</button>
+            <AuthButton>Log in</AuthButton>
         </form>
     );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import './ValidatonForm.css'
 import { useState } from "react";
 import logo from '../../../shared/assets/images/sparkle.png'
+import AuthButton from "../../../shared/ui/buttons/authbutton/AuthButton";
 
 function ValidatonForm() {
     const [formData, setFormData] = useState({
@@ -44,10 +45,8 @@ function ValidatonForm() {
             required
         />
         </div>
-
-        <button type="submit" className="btn-submit">
-            Submit
-        </button>
+        <br />
+        <AuthButton>Submit</AuthButton>
     </form>    
     )
 }

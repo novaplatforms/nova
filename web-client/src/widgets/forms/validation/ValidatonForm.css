@@ -74,25 +74,3 @@
   .form-group a:hover {
     color: var(--primary-hover-color);
   }
-
-  .btn-submit {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  .btn-submit:hover {
-    background-color: var(--primary-hover-color);
-    transform: scale(1.05);
-  }
-
-.btn-link {
-  text-decoration: none;
-  color: #ffffff;
-}

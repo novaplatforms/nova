@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import './RegistrationForm.css'
 import logo from '../../../shared/assets/images/sparkle.png'
+import AuthButton from '../../../shared/ui/buttons/authbutton/AuthButton';
 
 function RegistrationForm() {
     const [formData, setFormData] = useState({
@@ -108,10 +109,8 @@ function RegistrationForm() {
             </a>.
         </label>
         </div>
-
-        <button type="submit" className="btn-submit">
-            Register
-        </button>
+        <br />
+        <AuthButton>Register</AuthButton>
     </form>    
     )
 }
