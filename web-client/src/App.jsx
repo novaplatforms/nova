@@ -4,6 +4,7 @@ import logo from './shared/assets/images/novalogo.png';
 import './App.css';
 import LoginPage from './pages/auth/login/LoginPage';
 import RegistrationPage from './pages/auth/registration/RegistrationPage';
+import VerifyPage from './pages/auth/verify/VerifyPage';
 import { Helmet } from 'react-helmet';
 import ProfilePage from './pages/profile/ProfilePage';
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegistrationPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/verify" element={<VerifyPage />} />
       </Routes>
     </div>
   );

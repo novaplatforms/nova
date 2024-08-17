@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
-import logo from '../../../shared/assets/images/novalogo.png'
+import logo from '../../../shared/assets/images/sparkle.png'
 
 function LoginForm() {
     const [formData, setFormData] = useState({
@@ -23,9 +23,10 @@ function LoginForm() {
     };
 
     return (
-        <form className="registration-form" onSubmit={handleSubmit}>
+        <form className="registration-form" onSubmit={handleSubmit} method='post'>
             <center><img src={logo} alt="logo" width={50} height={50}/></center>
             <center><h2>Log in • <strong>Nova</strong></h2></center>
+            <br />
             <div className="form-group">
                 <label htmlFor="username">- Username or Email</label>
                 <input
@@ -46,16 +47,7 @@ function LoginForm() {
                     onChange={handleChange}
                 />
             </div>
-            <div className="form-group checkbox-group">
-                <input
-                    type="checkbox"
-                    id="termsAccepted"
-                    name="termsAccepted"
-                    checked={formData.termsAccepted}
-                    onChange={handleChange}
-                />
-                <label htmlFor="termsAccepted"><a href="#">Accept Terms</a> and <a href="#">Conditions</a></label>
-            </div>
+            <br />
             <button type="submit" className="btn-submit">Login</button>
         </form>
     );

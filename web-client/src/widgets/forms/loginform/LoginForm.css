@@ -20,7 +20,7 @@ body {
 }
 
 .registration-form {
-  background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
   padding: 100px;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
