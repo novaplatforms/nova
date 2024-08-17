@@ -16,13 +16,10 @@
  * along with NOVA. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.core.service.gcp;
+package com.core.service.message;
 
-import org.springframework.stereotype.Service;
-
-@Service
-public interface IGoogleCloudService {
-    void uploadFile(String bucketName, String objectName, String filePath);
-    void downloadFile(String bucketName, String objectName, String downloadFilePath);
-    void deleteFile(String bucketName, String objectName);
+public interface IMessageService {
+    void sendMessage(String message, Integer senderId, Integer receiverId);
+    void deleteMessage(Integer messageId);
+    void editMessage(Integer messageId, String newMessage);
 }

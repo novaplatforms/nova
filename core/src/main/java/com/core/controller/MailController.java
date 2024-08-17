@@ -1,19 +1,19 @@
 /*
  * @author Gnatyk Dmytro
- * This file is part of XAPP.
+ * This file is part of NOVA.
  *
- * XAPP is free software: you can redistribute it and/or modify
+ * NOVA is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * XAPP is distributed in the hope that it will be useful,
+ * NOVA is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with XAPP. If not, see <https://www.gnu.org/licenses/>.
+ * along with NOVA. If not, see <https://www.gnu.org/licenses/>.
  */
 
 package com.core.controller;
@@ -25,10 +25,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.SecureRandom;
 
@@ -53,7 +50,7 @@ public class MailController {
      * @return ResponseEntity with a message if email is sent successfully, or conflict if user with this email already exists
      */
 
-    @GetMapping("/send-check-mail")
+    @PostMapping("/send-check-mail")
     public ResponseEntity<String> checkMail(@RequestParam String email) {
         if (email == null) {
             logger.info("Email is null");
