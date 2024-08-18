@@ -7,6 +7,8 @@ import RegistrationPage from './pages/auth/registration/RegistrationPage';
 import VerifyPage from './pages/auth/verify/VerifyPage';
 import { Helmet } from 'react-helmet';
 import ProfilePage from './pages/profile/ProfilePage';
+import SideBar from './shared/ui/sidebar/SideBar';
+import ProfileCard from './widgets/cards/profile/ProfileCard';
 
 function App() {
   useEffect(() => {

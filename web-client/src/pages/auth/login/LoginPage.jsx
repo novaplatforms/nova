@@ -5,7 +5,7 @@ import LoginForm from '../../../widgets/forms/loginform/LoginForm';
 import Footer from '../../../shared/ui/footer/Footer';
 
 function LoginPage() {
-  return (
+  return ( 
     <div className="container">
       <Helmet>
         <title>nova • login</title>

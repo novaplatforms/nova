@@ -4,17 +4,22 @@
     --background-color: rgba(0, 0, 0, 0.7);
     --text-color: #ffffff;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    --font-family: "Anonymous Pro", monospace;
+    --font-family-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
     background-color: #121212; 
-    font-family: var(--font-family);
+    font-family: var(--font-family-main);
     margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .side-bar-form {
@@ -23,16 +28,14 @@ body {
     left: 0;
     background: var(--background-color);
     box-shadow: var(--box-shadow);
-    padding: 15px 0;
-    padding-right: 100px;
+    padding: 15px;
     width: 200px;
     height: 100%;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    font-family: var(--font-family-main);
 }
 
 .side-bar-content {
@@ -44,11 +47,16 @@ body {
 }
 
 .side-bar-logo img {
-    width: 55px;
-    height: auto;
-    margin-bottom: 40px;
-    margin-top: 15px;
-    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+.side-bar-logo:hover {
+    cursor: pointer;
+    background-color: var(--primary-hover-color);
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
 }
 
 .nav-list {
@@ -57,33 +65,34 @@ body {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    padding-left: 179px; 
+    margin-top: 20px;
+    font-family: var(--font-family-main);
 }
 
 .nav-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
 }
 
 .nav-list .top-section {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .nav-list .bottom-section {
     margin-top: auto; 
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
     padding: 8px;
-    margin-bottom: 15px;
     border-radius: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for scaling effect */
+    font-family: var(--font-family-main);
 }
 
 .nav-item img {
@@ -92,7 +101,7 @@ body {
     margin-right: 15px;
 }
 
-.nav-item strong a {
+.nav-link {
     color: var(--text-color);
     font-size: 16px;
     text-decoration: none;
@@ -101,5 +110,5 @@ body {
 .nav-item:hover {
     background-color: var(--primary-hover-color);
     cursor: pointer;
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
-
