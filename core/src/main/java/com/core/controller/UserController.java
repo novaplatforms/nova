@@ -22,9 +22,7 @@ import com.core.model.UserModel;
 import com.core.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -41,5 +39,20 @@ public class UserController {
     public ResponseEntity<List<UserModel>> getAllUsers() {
         logger.info("Getting all users");
         return ResponseEntity.ok(userService.getAllUsers());
+    }
+
+    @DeleteMapping("/delete/{userId}")
+    public ResponseEntity<String> deleteUser(@PathVariable Integer userId) {
+        if (userId == null) {
+            return ResponseEntity.accepted().body("User ID is null");
+        }
+        UserModel user = userService.getUserById(userId);
+        if (user != null) {
+            userService.deleteUser(user);
+            logger.info("User with ID " + userId + " deleted");
+            return ResponseEntity.ok("User with ID " + userId + " deleted");
+        }
+        logger.info("User with ID " + userId + " not found");
+        return ResponseEntity.notFound().build();
     }
 }

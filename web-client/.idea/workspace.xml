@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8238ada-24e0-44cc-8cf1-93f1db4907e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../core/src/main/java/com/core/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../core/src/main/java/com/core/model/UserStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../core/src/main/java/com/core/model/media/MediaModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../core/src/main/java/com/core/model/media/Photo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/web-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/search/Search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/core/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/model/MessageModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/test/java/com/core/CoreApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2l0WdSSUDe06RtFu2NAzw1VIZs4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.342" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8238ada-24e0-44cc-8cf1-93f1db4907e3" name="Changes" comment="" />
+      <created>1724317567865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724317567865</updated>
+      <workItem from="1724317570853" duration="1261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
