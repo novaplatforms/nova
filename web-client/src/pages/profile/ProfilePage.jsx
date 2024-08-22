@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import ProfileCard from "../../widgets/cards/profile/ProfileCard";
+import Search from "../../widgets/search/Search";
 import SideBar from "../../shared/ui/sidebar/SideBar";
 import './ProfilePage.css'
 
@@ -11,6 +12,7 @@ function ProfilePage() {
                 <title> nova • profile </title>
             </Helmet>
             <SideBar>gnatykdm</SideBar>
+            <Search />
             <ProfileCard username={"gnatykdm"}
                    fullname={"Dmytro Gnatyk"}
                    followers={"30"}
