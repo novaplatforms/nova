@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family), sans-serif;
 }
 
 .search {
@@ -19,8 +19,8 @@ body {
     box-shadow: var(--box-shadow);
     padding: 10px;
     gap: 10px;
-    width: 1160px;
-    margin: 20px 0 0 200px;
+    width: 860px;
+    margin: 20px 0 0 0;
 }
 
 .search-logo {
@@ -38,8 +38,14 @@ body {
     border: none;
     border-radius: 8px;
     outline: none;
-    font-family: var(--font-family);
+    font-family: var(--font-family), sans-serif;
     font-size: 14px;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.search-bar input:focus {
+    border: 1px solid var(--primary-color);
 }
 
 .search-button {
@@ -50,7 +56,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: var(--font-family);
+    font-family: var(--font-family), sans-serif;
     margin-left: 20px;
 }
 

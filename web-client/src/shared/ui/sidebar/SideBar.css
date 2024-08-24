@@ -9,7 +9,7 @@
 
 body {
     background-color: #121212; 
-    font-family: var(--font-family-main);
+    font-family: var(--font-family-main), sans-serif;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -29,13 +29,14 @@ a {
     background: var(--background-color);
     box-shadow: var(--box-shadow);
     padding: 15px;
-    width: 200px;
+    width: 250px;
     height: 100%;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: var(--font-family-main);
+    font-family: var(--font-family-main), sans-serif;
+    border-top-right-radius: 20px;
 }
 
 .side-bar-content {
@@ -49,7 +50,7 @@ a {
 .side-bar-logo img {
     width: 60px;
     height: 60px;
-    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+    transition: transform 0.3s ease;
 }
 
 .side-bar-logo:hover {
@@ -66,7 +67,7 @@ a {
     width: 100%;
     justify-content: space-between;
     margin-top: 20px;
-    font-family: var(--font-family-main);
+    font-family: var(--font-family-main), sans-serif;
 }
 
 .nav-list ul {
@@ -91,8 +92,8 @@ a {
     align-items: center;
     padding: 8px;
     border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for scaling effect */
-    font-family: var(--font-family-main);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: var(--font-family-main), sans-serif;
 }
 
 .nav-item img {
@@ -110,5 +111,5 @@ a {
 .nav-item:hover {
     background-color: var(--primary-hover-color);
     cursor: pointer;
-    transform: scale(1.05); /* Slight scale effect on hover */
+    transform: scale(1.05);
 }

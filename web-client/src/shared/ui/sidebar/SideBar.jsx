@@ -74,5 +74,4 @@ function SideBar({ children }) {
         </div>
     );
 }
-
 export default SideBar;

@@ -3,8 +3,10 @@ import logo from '../../../shared/assets/icons/Чёрный_супрематич
 import marker from '../../../shared/assets/icons/marker.png';
 import calendar from '../../../shared/assets/icons/calendar.png';
 import './ProfileCard.css';
+import {Link} from "react-router-dom";
 
 function ProfileCard({ username, fullname, posts, followers, likes, bins, bio, location, joined }) {
+
     return (
         <div className="profile-card">
             <div className="user-logo">
@@ -25,8 +27,8 @@ function ProfileCard({ username, fullname, posts, followers, likes, bins, bio, l
                     <div className="header-top">
                         <span className="username">{ username }</span>
                         <div className="buttons">
-                            <button>Edit</button>
-                            <button>Archive</button>
+                            <button><Link to={"/edit"}/>Edit</button>
+                            <button><Link to={"/bucket"}/>Archive</button>
                         </div>
                     </div>
                     <div className="content">

@@ -18,6 +18,7 @@
 
 package com.core.controller;
 
+import com.core.dto.UserDto;
 import com.core.model.UserModel;
 import com.core.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,6 +54,22 @@ public class UserController {
             return ResponseEntity.ok("User with ID " + userId + " deleted");
         }
         logger.info("User with ID " + userId + " not found");
+        return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping("/upgrade")
+    public ResponseEntity<UserModel> upgradeUser(@RequestBody UserDto userDto) {
+        if (userDto == null) {
+            logger.info("User is null");
+            return ResponseEntity.status(404).body(null);
+        }
+
+        UserModel user = userService.getUserByName(userDto.getUsername());
+        if (user != null) {
+            logger.info("User upgraded successfully");
+            userService.updateUser(user);
+            return ResponseEntity.ok(user);
+        }
         return ResponseEntity.notFound().build();
     }
 }
