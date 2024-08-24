@@ -7,7 +7,6 @@ const Search = () => {
 
     const handleButtonClick = () => {
         console.log('Search Query:', searchQuery);
-        // I will implement this later :)
     }
 
     return (
@@ -25,4 +24,5 @@ const Search = () => {
         </div>
     )
 }
+
 export default Search;

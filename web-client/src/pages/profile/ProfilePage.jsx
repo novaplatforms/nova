@@ -4,6 +4,7 @@ import ProfileCard from "../../widgets/cards/profile/ProfileCard";
 import SocialBar from "../../shared/ui/socialbar/SocialBar";
 import Search from "../../widgets/search/Search";
 import SideBar from "../../shared/ui/sidebar/SideBar";
+import Content from "../../widgets/content/Content";
 import './ProfilePage.css'
 
 function ProfilePage() {
@@ -24,6 +25,7 @@ function ProfilePage() {
                    joined={"01.01.2025"}
                    bio={"CEO && Founder of Nova Platforms"}
                    location={"Rzeszow, Poland"} />
+            <Content />
         </div>
     )
 }

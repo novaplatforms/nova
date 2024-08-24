@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8238ada-24e0-44cc-8cf1-93f1db4907e3" name="Changes" comment="search-bar implementation =&gt; frontend">
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/socialbar/SocialBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/ui/socialbar/SocialBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/core/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/model/Status.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/model/UserStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/model/media/MediaModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/core/model/media/Photo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/content/Content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/ProfilePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/profile/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/sidebar/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/sidebar/SideBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/ui/sidebar/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/sidebar/SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/socialbar/SocialBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/socialbar/SocialBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/socialbar/SocialBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/socialbar/SocialBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/cards/profile/ProfileCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/cards/profile/ProfileCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/cards/profile/ProfileCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/cards/profile/ProfileCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/forms/loginform/LoginForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/forms/loginform/LoginForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/search/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/search/Search.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/search/Search.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +78,7 @@
       <workItem from="1724317570853" duration="1568000" />
       <workItem from="1724319501349" duration="1180000" />
       <workItem from="1724410878509" duration="1342000" />
-      <workItem from="1724523210290" duration="1569000" />
+      <workItem from="1724523210290" duration="5043000" />
     </task>
     <task id="LOCAL-00001" summary="search-bar implementation =&gt; frontend">
       <option name="closed" value="true" />

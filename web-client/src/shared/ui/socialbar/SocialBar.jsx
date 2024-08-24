@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './SocialBar.css';
 
 const SocialBar = () => {
-    const [activeTab, setActiveTab] = useState(''); // Default to recommendations
+    const [activeTab, setActiveTab] = useState('');
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);

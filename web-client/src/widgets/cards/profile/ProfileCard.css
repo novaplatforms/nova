@@ -7,10 +7,6 @@
   --font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-body {
-  font-family: var(--font-family);
-}
-
 .profile-card {
   background: var(--background-color);
   border-radius: 20px;
@@ -23,7 +19,7 @@ body {
   font-family: var(--font-family), sans-serif;
   margin-top: 20px;
   margin-right: 25px;
- }
+}
 
 .user-logo {
   flex-shrink: 0;
@@ -36,7 +32,7 @@ body {
 .user-logo img {
   width: 125px;
   height: 125px;
-  border-radius: 20px;
+  border-radius: 20%;
 }
 
 .location-joined-bio {
@@ -58,14 +54,14 @@ body {
   font-size: 10px;
   display: flex;
   align-items: center;
-  font-family: var(--font-family); /* Ensure font consistency */
+  font-family: var(--font-family), sans-serif;
 }
 
 .joined {
   font-size: 10px;
   display: flex;
   align-items: center;
-  font-family: var(--font-family); /* Ensure font consistency */
+  font-family: var(--font-family), sans-serif;
 }
 
 .user-content {
@@ -82,22 +78,25 @@ body {
 .header-top {
   display: flex;
   align-items: center;
-  gap: 1px; /* Ensure no space between items */
+  gap: 1px;
 }
 
 .username {
   font-size: 20px;
-  font-weight: 500; /* Medium weight for emphasis */
+  font-weight: 500;
   color: var(--text-color);
-  margin: 0; /* Ensure no extra margin */
-  font-family: var(--font-family);
+  margin: 0;
+  font-family: var(--font-family), sans-serif;
 }
 
 .buttons {
   display: flex;
-  gap: 15px; /* Adjust gap between buttons if needed */
-  margin: 0;
-  margin-left: 20px; /* Ensure no extra margin */
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
 }
 
 .buttons button {
@@ -108,7 +107,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: var(--font-family); /* Ensure font consistency */
+  font-family: var(--font-family), sans-serif;
 }
 
 .buttons button:hover {
@@ -117,9 +116,9 @@ body {
 
 .fullname {
   margin-top: 15px;
-  font-size: 16px; /* Slightly larger for emphasis */
-  font-weight: 700; /* Bold weight for prominence */
-  font-family: var(--font-family); /* Ensure font consistency */
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-family), sans-serif;
 }
 
 .content {
@@ -130,13 +129,13 @@ body {
 }
 
 .content-item {
-  font-size: 14px; /* Consistent with other content items */
-  font-family: var(--font-family); /* Ensure font consistency */
+  font-size: 14px;
+  font-family: var(--font-family), sans-serif;
 }
 
 .bio {
   margin-top: 29px;
-  font-size: 13px; /* For readability */
+  font-size: 13px;
   font-weight: normal;
-  font-family: var(--font-family); /* Ensure font consistency */
+  font-family: var(--font-family), sans-serif;
 }

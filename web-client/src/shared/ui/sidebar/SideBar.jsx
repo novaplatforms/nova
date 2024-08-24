@@ -9,7 +9,7 @@ import more from '../../../shared/assets/icons/align-justify.png';
 import user from '../../../shared/assets/icons/user.png';
 import news from '../../../shared/assets/icons/envelope.png';
 import folder from '../../../shared/assets/icons/folder.png';
-import userlogo from '../../../shared/assets/icons/userlogo.png'
+import userlogo from '../../../shared/assets/icons/userlogo.png';
 import { Link } from "react-router-dom";
 import './SideBar.css';
 
@@ -61,7 +61,7 @@ function SideBar({ children }) {
                         <ul>
                             <li className="nav-item">
                                 <div className="user-ico"><img src={user} alt="user-ico" /></div>
-                                <span className="nav-link"><Link to="#">{ children }</Link></span>
+                                <span className="nav-link"><Link to="#">{children}</Link></span>
                             </li>
                             <li className="nav-item">
                                 <img src={more} alt="more-ico" />
